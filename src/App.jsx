@@ -1,11 +1,10 @@
 import React from 'react';
-import { Typography } from '@material-tailwind/react';
+import HomePage from './pages/Home/HomePage';
+import ProjectPage from './pages/Projects/ProjectsPage';
 
 const App = () => {
   return (
-    <Typography>
-      It Works
-    </Typography>
+    <HomePage />
   );
 };
 

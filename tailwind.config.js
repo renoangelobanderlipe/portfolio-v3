@@ -10,19 +10,18 @@ module.exports = withMT({
     extend: {
       fontFamily: {
         fira: ['Fira Code', 'sans-serif'],
-        main: ['Source Sans 3', 'sans-serif'],
-        // serif: ['Your Preferred Serif Font', 'serif'],
-        // mono: ['Your Preferred Monospace Font', 'monospace'],
+        main: ['Source Sans 3', 'sans-serif']
       },
       colors: {
         primary: '#9FFA82',
         bgColor: '#0F0F0F',
         text: '#F2F7F5',
-        icon: '#3C8771',
+        icon: '#0B362A',
+        button: '#0B362A'
       },
-      padding : {
-        mainDesktop : '160px',
-        mainPhone : '24px'
+      padding: {
+        mainDesktop: '160px',
+        mainPhone: '24px'
       }
     },
   },

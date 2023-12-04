@@ -1,15 +1,15 @@
-import { NavbarComponent } from '../../components/ui/NavbarComponent';
-import { AboutSection } from './Sections/AboutSection';
-import { HeroSection } from './Sections/HeroSection';
+import { Fragment } from 'react';
+import { pageSections } from '../../routes/routes';
 
 const HomePage = () => {
   return (
-    <>
-      <NavbarComponent />
-      <HeroSection />
-      <AboutSection />
-      <AboutSection />
-    </>
+    <Fragment>
+      {
+        pageSections.map((section, index) => <Fragment key={section}>
+          {section.component}
+        </Fragment>)
+      }
+    </Fragment>
   );
 }
 

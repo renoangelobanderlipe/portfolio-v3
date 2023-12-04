@@ -1,10 +1,21 @@
-import React from 'react';
-import HomePage from './pages/Home/HomePage';
-import ProjectPage from './pages/Projects/ProjectsPage';
+import { Fragment } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { pages } from './routes/routes';
+import { NavbarComponent } from './components/ui/NavbarComponent';
 
 const App = () => {
   return (
-    <HomePage />
+    <Fragment>
+      <NavbarComponent />
+      <Routes>
+        {
+          pages.map((page, index) =>
+            <Route path={page.path} element={page.component} key={page.id} />
+          )
+        }
+      </Routes>
+
+    </Fragment>
   );
 };
 
